@@ -1,3 +1,2 @@
 #!/bin/bash
-CFILE="101-quotes.c"
-gcc $CFILE -E -o c
+gcc 101-quote.c -E -o c
