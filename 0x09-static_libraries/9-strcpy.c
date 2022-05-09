@@ -1,13 +1,18 @@
 #include "main.h"
-
 /**
- * _strcpy - copies the string grom src to dest
- * @dest: destination to copy string to
- * @src: source to copy string from
- * Return: pointer to dest
- */
+* _strcpy - Copy paste string
+*@dest: destination
+*@src: source
+*Return: dest
+*/
 char *_strcpy(char *dest, char *src)
 {
-	strcpy(dest, src);
-	return (dest);
+int inc = 0;
+while (*(src + inc) != '\0')
+{
+*(dest + inc) = *(src + inc);
+inc++;
+}
+*(dest + inc) = '\0';
+return (dest);
 }
